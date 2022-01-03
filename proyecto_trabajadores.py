@@ -1,6 +1,6 @@
 
 
-DATA1 = [
+DATA = [
     {
         'name': 'Facundo',
         'age': 72,
