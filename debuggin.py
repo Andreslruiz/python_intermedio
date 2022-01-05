@@ -3,7 +3,7 @@ def divisors2(num):
     return divisors
 
 def run():
-    num=int(input('ingrese un numero: '))
+    num=int(input('ingrese un numeroo: '))
     print(divisors2(num))
 
 if __name__=='__main__':
