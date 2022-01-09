@@ -2,7 +2,7 @@ def palindromo(string):
 
     try: 
         if len(string) == 0:
-            raise ValueError('No se puede ingresar nada vacion.')
+            raise ValueError('No se puede ingresar nada vacio.')
         return string==string[::-1]
 
     except ValueError as ve:
