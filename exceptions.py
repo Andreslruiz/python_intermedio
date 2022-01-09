@@ -1,5 +1,4 @@
 def palindromo(string):
-
     try: 
         if len(string) == 0:
             raise ValueError('No se puede ingresar nada vacio.')
