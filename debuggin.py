@@ -3,8 +3,11 @@ def divisors2(num):
     return divisors
 
 def run():
-    num=int(input('ingrese un numeroo: '))
-    print(divisors2(num))
+    try:
+        num=int(input('ingrese un numeroo: '))
+        print(divisors2(num))
+    except ValueError:
+        print("Debes ingresar un numero.")
 
 if __name__=='__main__':
     run()

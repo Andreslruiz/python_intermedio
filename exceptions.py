@@ -1,4 +1,5 @@
 def palindromo(string):
+    string='5'
     try: 
         if len(string) == 0:
             raise ValueError('No se puede ingresar nada vacio.')
@@ -9,6 +10,6 @@ def palindromo(string):
         return False
 
 try:
-    print(palindromo(''))
+    print(palindromo(""))
 except TypeError:
     print('Solo se pueden ingresar strings:')
