@@ -15,7 +15,7 @@ def write():
             f.write('\n')      
 
 def ahorcado():
-    a=11
+    a=0
     valor= random.randint(1,171)
     datos=[]
     with open('./archivos/data.txt','r', encoding='utf-8') as f:
@@ -29,14 +29,19 @@ def ahorcado():
         lineas.append('_')
     print(palabra)
     print(lineas)
-    
-    while a>1:
+    lleno=0
+    while a<11:
         letra=input(str('Ingrese una letra: '))
         for i in range(largo):
             if letra==palabra[i]:
                 lineas[i]=letra
-                a=a-1
+                lleno=lleno+1
+        if lleno==largo-1:
+            print('GANASTE!!!')
+            break
+        a=a+1
         print(lineas)
+    print('PERDISTE!!!')
     
     
     
