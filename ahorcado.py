@@ -41,7 +41,9 @@ def ahorcado():
             break
         a=a+1
         print(lineas)
-    print('PERDISTE!!!')
+        if a==10:
+            print('PERDISTE!!!')
+            break
     
     
     
